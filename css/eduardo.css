@@ -66,8 +66,8 @@ h2 {
 
 img {
     object-fit: cover;
-    height: 200px;
-    width: 250px;
+    max-width: 100%;
+    height:auto;
 }
 
 .sobre-mim {
@@ -110,7 +110,7 @@ img {
 }
 
 .card {
-    width: 300px;
+    width: 320px;
     background-color: var(--cor-principal);
     border-radius: var(--raio);
     box-shadow: var(--sombra);
@@ -179,4 +179,57 @@ footer {
     padding: 50px;
     color: rgb(241, 237, 237);
     text-align: center;
+}
+
+@media (max-width:768px){
+
+    .tudo {
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .imagem-pessoal img {
+        width:170px;
+        height:170px;
+    }
+
+    h2 {
+        font-size:28px;
+        margin:35px 0;
+    }
+
+    .sobre-mim {
+        margin:15px;
+        padding:20px;
+    }
+
+    .card {
+        width:100%;
+        max-width:330px;
+    }
+
+    .galeria img {
+        width:100%;
+        height:auto;
+    }
+
+    .hobbies img {
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    .links {
+        padding:30px;
+    }
+
+    .links a i {
+        font-size:40px;
+    }
+
+    footer {
+        padding:30px;
+    }
+
 }
